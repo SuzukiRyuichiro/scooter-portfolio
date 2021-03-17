@@ -1,6 +1,6 @@
 <ul class="nav tabs-underlined" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple_portfolio" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
+    <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
@@ -10,8 +10,8 @@
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade py-3 show active" id="simple_portfolio" role="tabpanel" aria-labelledby="home-tab">
-    <%= partial "components/project-carousel", locals: { project: "simple_portfolio" } %>
+  <div class="tab-pane fade py-3 show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
+    <%= partial "components/project-carousel", locals: { project: "simple" } %>
   </div>
   <div class="tab-pane fade py-3" id="booze" role="tabpanel" aria-labelledby="profile-tab">
     <%= partial "components/project-carousel", locals: { project: "booze" } %>
