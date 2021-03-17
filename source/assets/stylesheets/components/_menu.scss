@@ -2,4 +2,14 @@
   margin-top: 70px;
   width: 80%;
   font-size: 30px;
+
+  a {
+    color: gray;
+    transition: ease-in-out .4s;
+  }
+
+  a:hover {
+    color: #101010;
+    text-decoration: none;
+  }
 }
