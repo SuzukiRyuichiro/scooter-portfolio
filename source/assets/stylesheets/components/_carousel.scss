@@ -1,6 +1,13 @@
+.carousel-size-position{
+  width: 80vw;
+}
+
+.carousel-bg{
+  background-color: gray;
+}
 .carousel-item {
   img {
     height: 60vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
