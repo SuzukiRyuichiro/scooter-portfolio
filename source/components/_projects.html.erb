@@ -6,17 +6,17 @@
     <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-cocktail"></i></a>
+    <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-bed"></i></a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade py-3 show active" id="simple_portfolio" role="tabpanel" aria-labelledby="home-tab">
-    <%= partial "components/project-carousel" %>
+    <%= partial "components/project-carousel", locals: { project: "simple_portfolio" } %>
   </div>
   <div class="tab-pane fade py-3" id="booze" role="tabpanel" aria-labelledby="profile-tab">
-    This is the content for the Requests tab. Notice in the tab HTML there is a href="#requests". This is pointing to the id of this div.
+    <%= partial "components/project-carousel", locals: { project: "powered_by_booze" } %>
   </div>
   <div class="tab-pane fade py-3" id="napbuddies" role="tabpanel" aria-labelledby="converstion-tab">
-    This is the content for the Conversations tab. Notice in the tab HTML there is a href="#converstations". This is pointing to the id of this div.
+    <%= partial "components/project-carousel", locals: { project: "napbuddies" } %>
   </div>
 </div>
