@@ -1,0 +1,9 @@
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.scroll-page {
+  height: 100vh;
+  scroll-snap-align: center;
+}
