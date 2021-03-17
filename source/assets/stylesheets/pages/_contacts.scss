@@ -1,0 +1,14 @@
+.contacts {
+  height: 100vh;
+  font-size: 100px;
+
+  a {
+    transition: ease-in-out .5s;
+    color: gray;
+  }
+
+  a:hover {
+    color: #101010;
+    text-decoration: none;
+  }
+}
