@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center">
-  <div id="carouselExampleControls" class="carousel slide carousel-size-position" data-ride="carousel">
+  <div id="carousel<%= project.capitalize %>Controls" class="carousel slide carousel-size-position" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item carousel-bg active">
       <%= image_tag "#{project}/1.png", alt: "alttext", class: "d-block w-100" %>
@@ -14,11 +14,11 @@
       <%= image_tag "#{project}/4.png", alt: "alttext", class: "d-block w-100" %>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carousel<%= project.capitalize %>Controls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carousel<%= project.capitalize %>Controls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
