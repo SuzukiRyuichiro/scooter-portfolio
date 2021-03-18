@@ -12,7 +12,9 @@
     <%= partial 'components/projects' %>
   </div>
   <div class="scroll-page" id="Hobbies">
-        <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>" } %>
+    <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
+    <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-left'} %>
+    <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
   </div>
   <div class="scroll-page" id="Contact">
     <%= partial 'components/contact'  %>
