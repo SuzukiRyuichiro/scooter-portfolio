@@ -29,6 +29,7 @@
     "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.2",
     "bootstrap4-toggle": "^3.6.1",
     "core-js": "^3.6.4",
