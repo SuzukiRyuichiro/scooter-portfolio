@@ -1,13 +1,15 @@
-<div class="card mb-3" style="max-width: 540px;" data-aos="<%= aos %>">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <%= image_tag "#{photo}", alt: "alttext", class: "card-img" %>
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><%= title %></h5>
-        <p class="card-text"><%= content %></p>
-        <p class="card-text"><small class="text-muted"><%= link %></small></p>
+<div class="hobby-row-<%= anchor %>">
+  <div class="card mb-3" style="max-width: 60%;" data-aos="<%= aos %>">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <%= partial "components/hobby_carousel", class: "card-img", locals: { title: title } %>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= title %></h5>
+          <p class="card-text"><%= content %></p>
+          <p class="card-text"><small class="text-muted"><%= link %></small></p>
+        </div>
       </div>
     </div>
   </div>

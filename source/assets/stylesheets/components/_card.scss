@@ -1,0 +1,29 @@
+.hobby-row-left {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+
+  .card {
+    margin-left: 50px;
+  }
+
+  img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+.hobby-row-right {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  .card {
+    margin-right: 50px;
+  }
+
+
+  img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}

@@ -3,18 +3,23 @@
     <%= partial 'components/banner' %>
     <%= partial 'components/menu_and_name' %>
   </div>
-  <div class="scroll-page container d-flex align-items-center justify-content-between" id="Info">
-    <%= image_tag "profile-picture2.JPG", alt: "alttext", class: 'about-me-pic mr-3' %>
-    <%= partial 'components/about_me' %>
+  <div class="scroll-page" id="Info">
+    <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
+      <%= image_tag "profile-picture2.JPG", alt: "alttext", class: 'about-me-pic mr-3' %>
+      <%= partial 'components/about_me' %>
+    </div>
   </div>
-  <div class="scroll-page p-5" id="Projects">
-    <h2 class="mt-2"><i class="far fa-file-code"></i> Past Projects</h2>
+  <div class="scroll-page" id="Projects">
     <%= partial 'components/projects' %>
   </div>
   <div class="scroll-page" id="Hobbies">
-    <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
-    <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-left'} %>
-    <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
+    <div class="container d-flex align-items-center justify-content-around h-100">
+      <div>
+        <%= partial 'components/hobby_card', locals: {anchor: "left", photo: "hobby1.jpg", title: "Photography", content: "I like taking photos", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
+        <%= partial 'components/hobby_card', locals: {anchor: "right", photo: "hobby1.jpg", title: "Hardware", content: "I like fiddling with gadgets", link: "", aos: 'fade-left'} %>
+        <%= partial 'components/hobby_card', locals: {anchor: "left", photo: "hobby1.jpg", title: "Sports", content: "I like playing sports, and watching sports", link: "", aos: 'fade-right'} %>
+      </div>
+    </div>
   </div>
   <div class="scroll-page" id="Contact">
     <%= partial 'components/contact'  %>

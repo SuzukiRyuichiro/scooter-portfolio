@@ -1,22 +1,25 @@
-<ul class="nav tabs-underlined" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-bed"></i></a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade py-3 show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
-    <%= partial "components/project-carousel", locals: { project: "simple" } %>
-  </div>
-  <div class="tab-pane fade py-3" id="booze" role="tabpanel" aria-labelledby="profile-tab">
-    <%= partial "components/project-carousel", locals: { project: "booze" } %>
-  </div>
-  <div class="tab-pane fade py-3" id="napbuddies" role="tabpanel" aria-labelledby="converstion-tab">
-    <%= partial "components/project-carousel", locals: { project: "napbuddies" } %>
+<div class="p-4">
+  <h2 class="mt-2 ml-4"><i class="far fa-file-code"></i> Past Projects</h2>
+  <ul class="nav tabs-underlined" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-bed"></i></a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade py-3 show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
+      <%= partial "components/project-carousel", locals: { project: "simple", content: "Simple Portfolio was built as the final project of 9 weeks coding bootcamp. It is a web application that aids individual investors to consolidate portfolios into one application even when users have their assets across multiple platforms. The app was built in a group of three and I was the lead developer. I proposed the project and took a major role in organizing the development."} %>
+    </div>
+    <div class="tab-pane fade py-3" id="booze" role="tabpanel" aria-labelledby="profile-tab">
+      <%= partial "components/project-carousel", locals: { project: "booze", content: "Powered by Booze was the first rails application I ever built. The purpose of the application is to list a variety of cocktails with their recipes. I enjoyed writing APIs that enabled the AJAX autofill search feature. Also, the application utilizes APIs to collect real data and photos to seed the database. Users can add cocktails and also leave reviews to the cocktails." } %>
+    </div>
+    <div class="tab-pane fade py-3" id="napbuddies" role="tabpanel" aria-labelledby="converstion-tab">
+      <%= partial "components/project-carousel", locals: { project: "napbuddies", content: "Napbuddies is an Airbnb style booking web application, where users can host events where other users can request to attend. People can leave reviews to other users and also search events by title or location. This was made by group of three, and I was the lead developer and delegated tasks to my teammate while overseeing the whole development. I mainly took responsible in dashboard page developnment. And yes, this is a joke application 😉" } %>
+    </div>
   </div>
 </div>
