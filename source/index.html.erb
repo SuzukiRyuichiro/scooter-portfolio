@@ -8,10 +8,15 @@
     <%= partial 'components/about_me' %>
   </div>
   <div class="scroll-page p-5" id="Projects">
+    <h2 class="mt-2"><i class="far fa-file-code"></i> Past Projects</h2>
     <%= partial 'components/projects' %>
   </div>
   <div class="scroll-page" id="Hobbies">
-    <h1>Hobbies</h1>
+    <div class="d-flex w-100 h-100 justify-content-around align-items-center fluid-container">
+          <%= partial 'components/hobby_card', locals: {photo: "hobby2.jpg", title: "Hardware", content: "test"}%>
+          <%= partial 'components/hobby_card', locals: {photo: "hobby1.jpg", title: "Photography", content: "test" } %>
+          <%= partial 'components/hobby_card', locals: {photo: "hobby3.jpg", title: "Sports", content: "test"}%>
+    </div>
   </div>
   <div class="scroll-page" id="Contact">
     <%= partial 'components/contact'  %>
