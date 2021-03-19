@@ -26,9 +26,11 @@
   position: absolute;
 }
 
-.skill-icon {
-  width: 50px;
-  border-radius: 50%;
+.skills {
+  .skill-icon {
+    width: 50px;
+    border-radius: 50%;
+  }
 }
 
 .about-me-pic {
