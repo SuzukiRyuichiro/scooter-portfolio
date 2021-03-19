@@ -9,6 +9,8 @@
 // when width is smaller than a phone size (or for phones)
 @media only screen and (max-width: 575.98px) {
   .carousel-item {
+    margin-top: 10%;
+
     img {
       height: 40vh;
       object-fit: contain;
