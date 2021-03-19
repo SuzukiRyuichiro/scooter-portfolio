@@ -100,4 +100,15 @@ html {
   border: solid 3px white;
 }
 
+#Projects {
+  .tab-pane {
+    i {
+      color: gray;
+      transition: ease-in-out .2s;
+    }
 
+    i:hover {
+      color: black;
+    }
+  }
+}
