@@ -1,38 +1,63 @@
-// for phone sized pages, disable snaps
-@media (min-width: 576px) {
-  html {
-    scroll-snap-type: y mandatory;
+// when width is smaller than a phone size (or for phones)
+@media only screen and (max-width: 575.98px) {
+  .info-page {
+    flex-direction: column;
+
+    .about-me-pic {
+      width: 60%;
+    }
+    .skill-icon {
+      width: 30px;
+    }
   }
 
-  .scroll-page {
-    scroll-snap-align: center;
+  #Projects {
+    .nav-item {
+      a {
+        font-size: 10px;
+        margin: 8px 2px 8px 2px;
+      }
+    }
   }
 }
 
-@media (min-width: 768px) {
+// this will be applied to something wider than phones
+@media only screen and  (min-width: 576px) {
+    .skill-icon {
+    width: 50px;
+  }
 
+  .about-me-pic {
+    height: 400px;
+  }
+
+  #Projects {
+    .nav-item {
+      font-size: 12px;
+    }
+  }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-
-}
 
 // below here is universal
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 .scroll-page {
-    height: 100vh;
+  height: 100vh;
+  scroll-snap-align: center;
 }
+
+.skills {
+  .skill-icon {
+    border-radius: 50%;
+  }
+}
+
+.about-me-pic {
+  border: solid 3px white;
+}
+
+
