@@ -10,6 +10,9 @@
     <li class="nav-item" role="presentation">
       <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-bed"></i></a>
     </li>
+    <li class="nav-item" role="presentation">
+      <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#formula" role="tab" aria-controls="converstion" aria-selected="false">Formula Gif <i class="fas fa-car"></i></a>
+    </li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade py-3 show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
@@ -20,6 +23,9 @@
     </div>
     <div class="tab-pane fade py-3" id="napbuddies" role="tabpanel" aria-labelledby="converstion-tab">
       <%= partial "components/project-carousel", locals: { project: "napbuddies", content: "<em>Napbuddies</em> is an Airbnb style booking web application, where users can host events where other users can request to attend. People can leave reviews to other users and also search events by title or location. This was made by group of three, and I was the lead developer and delegated tasks to my teammate while overseeing the whole development. I mainly took responsible in dashboard page developnment. And yes, this is a joke application 😉 <a href='https:/napbuddies.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/napbuddies'><i class='fab fa-github'></i></a>" } %>
+    </div>
+    <div class="tab-pane fade py-3" id="formula" role="tabpanel" aria-labelledby="converstion-tab">
+      <%= partial "components/project-carousel", locals: { project: "formula", content: "<em>Formula Gif</em> is an Airbnb style booking web application, where users can host events where other users can request to attend. People can leave reviews to other users and also search events by title or location. This was made by group of three, and I was the lead developer and delegated tasks to my teammate while overseeing the whole development. I mainly took responsible in dashboard page developnment. And yes, this is a joke application 😉 <a href='https:/napbuddies.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/napbuddies'><i class='fab fa-github'></i></a>" } %>
     </div>
   </div>
 </div>
