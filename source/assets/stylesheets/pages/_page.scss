@@ -50,6 +50,9 @@
 }
 @media (min-width:480px)  {
   /* smartphones, Android phones, landscape iPhone */
+  html {
+    scroll-snap-type: none;
+  }
   .tab-underlined {
     i {
       display: none;
@@ -59,6 +62,9 @@
 }
 @media (min-width:600px)  {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  html {
+    scroll-snap-type: y mandatory;
+  }
   #Info {
 
     .container {
@@ -145,7 +151,6 @@
 // below here is universal
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 .scroll-page {
