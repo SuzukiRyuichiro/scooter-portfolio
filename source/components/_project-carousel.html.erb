@@ -3,7 +3,7 @@
     <div class="carousel-inner">
       <% data.images.images.each do |f| %>
       <div class="carousel-item carousel-bg <%= "active" if f == 1 %>">
-        <%= image_tag "#{project}/#{f}.png", alt: "screenshot", class: "d-block w-100" %>
+        <%= image_tag "#{project}/#{f}.webp", alt: "screenshot", class: "d-block w-100" %>
       </div>
       <% end %>
     </div>
@@ -17,7 +17,7 @@
     </a>
   </div>
 </div>
-<div class="project-explanation" style="padding: 2% 4% 0 4%; text-align: justify;">
+<div class="project-explanation" style="text-align: justify;">
   <p><%= content %></p>
 </div>
 

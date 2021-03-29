@@ -1,25 +1,29 @@
-<h2 class="mt-2 pt-3 px-4"><i class="far fa-file-code"></i> Projects</h2>
-<div class="p-4">
-  <ul class="nav tabs-underlined" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-bed"></i></a>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade py-3 show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
-      <%= partial "components/project-carousel", locals: { project: "simple", content: "<em>Simple Portfolio</em> was built as the final project of 9 weeks coding bootcamp. It is a web application that aids individual investors to consolidate portfolios into one application even when users have their assets across multiple platforms. The app was built in a group of three and I was the lead developer. I proposed the project and took a major role in organizing the development. <a href='https://single-portfolio.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/simple_portfolio'><i class='fab fa-github'></i></a>"} %>
-    </div>
-    <div class="tab-pane fade py-3" id="booze" role="tabpanel" aria-labelledby="profile-tab">
-      <%= partial "components/project-carousel", locals: { project: "booze", content: "<em>Powered by Booze</em> was the first rails application I ever built. The purpose of the application is to list a variety of cocktails with their recipes. I enjoyed writing APIs that enabled the AJAX autofill search feature. Also, the application utilizes APIs to collect real data and photos to seed the database. Users can add cocktails and also leave reviews to the cocktails. <a href='https://powered-by-booze.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/powered-by-booze'><i class='fab fa-github'></i></a>" } %>
-    </div>
-    <div class="tab-pane fade py-3" id="napbuddies" role="tabpanel" aria-labelledby="converstion-tab">
-      <%= partial "components/project-carousel", locals: { project: "napbuddies", content: "<em>Napbuddies</em> is an Airbnb style booking web application, where users can host events where other users can request to attend. People can leave reviews to other users and also search events by title or location. This was made by group of three, and I was the lead developer and delegated tasks to my teammate while overseeing the whole development. I mainly took responsible in dashboard page developnment. And yes, this is a joke application 😉 <a href='https:/napbuddies.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/napbuddies'><i class='fab fa-github'></i></a>" } %>
-    </div>
+<h2 class="project-header"><i class="far fa-file-code"></i> Projects</h2>
+<ul class="nav tabs-underlined" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#napbuddies" role="tab" aria-controls="converstion" aria-selected="false">Napbuddies <i class="fas fa-bed"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#formula" role="tab" aria-controls="converstion" aria-selected="false">Formula Gif <i class="fas fa-car"></i></a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
+    <%= partial "components/project-carousel", locals: { project: "simple", content: "<b>Simple Portfolio</b> was built as the final project of 9 weeks coding bootcamp. It is a web application that aids individual investors to consolidate portfolios into one application even when users have their assets across multiple platforms. The app was built in a group of three and I was the lead developer. I proposed the project and took a major role in organizing the development. <a href='https://single-portfolio.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/simple_portfolio'><i class='fab fa-github'></i></a>"} %>
+  </div>
+  <div class="tab-pane fade" id="booze" role="tabpanel" aria-labelledby="profile-tab">
+    <%= partial "components/project-carousel", locals: { project: "booze", content: "<b>Powered by Booze</b> was the first rails application I ever built. The purpose of the application is to list a variety of cocktails with their recipes. I enjoyed writing APIs that enabled the AJAX autofill search feature. Also, the application utilizes APIs to collect real data and photos to seed the database. Users can add cocktails and also leave reviews to the cocktails. <a href='https://powered-by-booze.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/powered-by-booze'><i class='fab fa-github'></i></a>" } %>
+  </div>
+  <div class="tab-pane fade" id="napbuddies" role="tabpanel" aria-labelledby="converstion-tab">
+    <%= partial "components/project-carousel", locals: { project: "napbuddies", content: "<b>Napbuddies</b> is an Airbnb style booking web application, where users can host events where other users can request to attend. People can leave reviews to other users and also search events by title or location. This was made by group of three, and I was the lead developer and delegated tasks to my teammate while overseeing the whole development. I mainly took responsible in dashboard page developnment. And yes, this is a joke application 😉 <a href='https:/napbuddies.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/napbuddies'><i class='fab fa-github'></i></a>" } %>
+  </div>
+  <div class="tab-pane fade" id="formula" role="tabpanel" aria-labelledby="converstion-tab">
+    <%= partial "components/project-carousel", locals: { project: "formula", content: "<b>Formula Gif</b> is a React <i class='devicon-react-original'></i> application that simply searches for a gif that is related to Formula 1. Users can copy the link of the gif and share anywhere they like. <a href='https://suzukiryuichiro.github.io/formula-giphy/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/formula-giphy'><i class='fab fa-github'></i></a>" } %>
   </div>
 </div>
