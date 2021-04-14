@@ -4,6 +4,9 @@
     <a class="active tab-underlined" id="home-tab" data-toggle="tab" href="#simple" role="tab" aria-controls="home" aria-selected="true">Simple Portfolio <i class="fas fa-wallet"></i></a>
   </li>
   <li class="nav-item" role="presentation">
+    <a class="tab-underlined" id="converstion-tab" data-toggle="tab" href="#redux chat" role="tab" aria-controls="converstion" aria-selected="false">Message API <i class="fas fa-cog"></i></a>
+  </li>
+  <li class="nav-item" role="presentation">
     <a class="tab-underlined" id="profile-tab" data-toggle="tab" href="#booze" role="tab" aria-controls="profile" aria-selected="false">Powered By Booze <i class="fas fa-cocktail"></i></a>
   </li>
   <li class="nav-item" role="presentation">
@@ -19,6 +22,9 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="simple" role="tabpanel" aria-labelledby="home-tab">
     <%= partial "components/project-carousel", locals: { project: "simple", content: "<b>Simple Portfolio</b> was built as the final project of 9 weeks coding bootcamp. It is a web application that aids individual investors to consolidate portfolios into one application even when users have their assets across multiple platforms. The app was built in a group of three and I was the lead developer. I proposed the project and took a major role in organizing the development. <a href='https://single-portfolio.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/simple_portfolio'><i class='fab fa-github'></i></a>"} %>
+  </div>
+  <div class="tab-pane fade" id="redux-chat" role="tabpanel" aria-labelledby="profile-tab">
+    <%= partial "components/project-carousel", locals: { project: "redux-chat", content: "<b>Redux Chat</b> was the first rails application I ever built. The purpose of the application is to list a variety of cocktails with their recipes. I enjoyed writing APIs that enabled the AJAX autofill search feature. Also, the application utilizes APIs to collect real data and photos to seed the database. Users can add cocktails and also leave reviews to the cocktails. <a href='https://powered-by-booze.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/powered-by-booze'><i class='fab fa-github'></i></a>" } %>
   </div>
   <div class="tab-pane fade" id="booze" role="tabpanel" aria-labelledby="profile-tab">
     <%= partial "components/project-carousel", locals: { project: "booze", content: "<b>Powered by Booze</b> was the first rails application I ever built. The purpose of the application is to list a variety of cocktails with their recipes. I enjoyed writing APIs that enabled the AJAX autofill search feature. Also, the application utilizes APIs to collect real data and photos to seed the database. Users can add cocktails and also leave reviews to the cocktails. <a href='https://powered-by-booze.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/powered-by-booze'><i class='fab fa-github'></i></a>" } %>
