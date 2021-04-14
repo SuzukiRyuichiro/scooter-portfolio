@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center">
   <div id="carousel<%= project.capitalize %>Controls" class="carousel slide carousel-size-position" data-ride="carousel">
     <div class="carousel-inner">
-      <% data.images.image.each do |f| %>
+      <% data.images.images.each do |f| %>
       <div class="carousel-item carousel-bg <%= "active" if f == 1 %>">
         <%= image_tag "#{project}/#{f}.webp", alt: "screenshot", class: "d-block w-100" %>
       </div>
