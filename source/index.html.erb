@@ -12,7 +12,13 @@
   <div class="scroll-page container" id="Projects">
     <%= partial 'components/projects' %>
   </div>
-<!--   <div class="scroll-page" id="Hobbies">
+  <div class="scroll-page" id="Posts">
+    <div class="container d-flex align-items-center justify-content-around h-100">
+      <a href="https://qiita.com/SuzukiRyuichiro" data-qiita-widget data-username="SuzukiRyuichiro">Posts</a>
+      <script src="https://qiita-widget.suin.io/widget.js" defer></script>
+    </div>
+  </div>
+  <!--   <div class="scroll-page" id="Hobbies">
     <div class="container d-flex align-items-center justify-content-around h-100">
       <div>
         <#%= partial 'components/hobby_card', locals: {anchor: "left", photo: "hobby1.jpg", title: "Photography", content: "I like taking photos", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
@@ -21,7 +27,8 @@
       </div>
     </div>
   </div>
- -->  <div class="scroll-page" id="Contact">
+ -->
+  <div class="scroll-page" id="Contact">
     <%= partial 'components/contact'  %>
   </div>
 </div>
