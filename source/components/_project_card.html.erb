@@ -5,6 +5,20 @@
     <h3 class="app-name">
       <%= project_name %>
     </h3>
+    <% stack.each do |skill|%>
+      <% case skill %>
+      <% when 'pg' %>
+      <i class="devicon-postgresql-plain"></i>
+      <% when 'js' %>
+      <i class="devicon-javascript-plain"></i>
+      <% when 'react' %>
+      <i class="devicon-react-original"></i>
+      <% when 'redux' %>
+      <i class="devicon-redux-original"></i>
+      <% when 'rails' %>
+      <i class="devicon-rails-plain"></i>
+      <% end %>
+    <% end %>
     <div class="d-flex justify-content-around mb-3">
       <% link_to app do%>
       <div class="my-2">
