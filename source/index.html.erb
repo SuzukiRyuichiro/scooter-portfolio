@@ -1,19 +1,24 @@
 <div class="scroll-container">
+  <!-- first page -->
   <div class="scroll-page">
     <%= partial 'components/banner' %>
     <%= partial 'components/menu_and_name' %>
   </div>
+  <!-- Information about me -->
   <div class="scroll-page" id="Info">
     <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <%= image_tag "profile-picture2.webp", alt: "alttext", class: 'about-me-pic' %>
       <%= partial 'components/about_me' %>
     </div>
   </div>
+  <!-- Projects cards -->
   <div class="scroll-page2 container" id="Projects">
     <%= partial 'components/projects' %>
   </div>
-  <div class="scroll-page" id="Posts">
-    <div class="container d-flex align-items-center justify-content-around h-100">
+  <!-- My writings -->
+  <div class="scroll-page container" id="Posts">
+    <h2 class="project-header"><i class="fas fa-rss"></i> My Writings</h2>
+    <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <a href="https://qiita.com/SuzukiRyuichiro" data-qiita-widget data-hide-footer data-width="50vw" data-username="SuzukiRyuichiro">Posts</a>
       <script src="https://qiita-widget.suin.io/widget.js" defer></script>
     </div>
