@@ -153,6 +153,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.scroll-page2 {
+  height: 200vh;
+  scroll-snap-align: start;
+}
+
 .scroll-page {
   height: 100vh;
   scroll-snap-align: center;
