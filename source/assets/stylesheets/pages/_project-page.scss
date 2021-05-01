@@ -1,0 +1,22 @@
+.back {
+  padding: 10px;
+  height: 5vh;
+  font-size: 30px;
+
+  a i {
+    color: gray;
+    transition: ease-in-out .2s;
+  }
+  a i:hover {
+    color: #202020;
+  }
+}
+
+.d-grid {
+  height: 95vh;
+  display: grid;
+  place-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+}

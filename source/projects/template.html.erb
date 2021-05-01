@@ -1,9 +1,12 @@
-<div class="container h-100">
-<div class="d-flex justify-content-center">
+<div class="back">
+  <% link_to '/' do %><i class="fas fa-long-arrow-alt-left"></i><% end %>
+</div>
+
+<div class="d-grid" id="Projects">
   <div id="carouselControls" class="carousel slide carousel-size-position" data-ride="carousel">
     <div class="carousel-inner">
       <% data.images.images.each do |f| %>
-      <div class="carousel-item carousel-bg <%= "active" if f == 1 %>">
+      <div class="carousel-item carousel-bg <%= " active" if f==1 %>">
         <%= image_tag "#{project}/#{f}.webp", alt: "screenshot", class: "d-block w-100" %>
       </div>
       <% end %>
@@ -17,9 +20,8 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
-<div class="project-explanation" style="text-align: justify;">
-  <p><%= content %></p>
-</div>
-</div>
-
+  <div class="project-explanation" style="text-align: justify;">
+    <p>
+      <%= content %>
+    </p>
+  </div>
