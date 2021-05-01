@@ -5,6 +5,7 @@
     <h3 class="app-name">
       <%= project_name %>
     </h3>
+    <div class="text-muted">
     <% stack.each do |skill|%>
       <% case skill %>
       <% when 'pg' %>
@@ -17,9 +18,16 @@
       <i class="devicon-redux-original"></i>
       <% when 'rails' %>
       <i class="devicon-rails-plain"></i>
+      <% when 'html' %>
+      <i class="devicon-html5-plain"></i>
+      <% when 'sass' %>
+      <i class="devicon-sass-original"></i>
+      <% when 'ruby' %>
+      <i class="devicon-ruby-plain"></i>
       <% end %>
     <% end %>
-    <div class="d-flex justify-content-around mb-3">
+  </div>
+    <div class="buttons d-flex justify-content-around">
       <% link_to app do%>
       <div class="my-2">
         <i class="fas fa-desktop"></i> App
