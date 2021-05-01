@@ -107,16 +107,21 @@ body {
 .projects-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
   grid-gap: 32px;
-  align-items: start;
+  align-items: center;
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .projects-cards {
+    grid-template-columns: repeat(2, 1fr);
     .img-cover {
-      display: none;
+
+    }
+
+    .card img {
+        height:100px;
     }
     h3 {
       font-size: 12px;
