@@ -67,9 +67,11 @@ body {
   height:50px;
   overflow: auto;
 }
-
 .desc a{
   text-decoration: none;
+}
+
+.desc .read-more{
   background-color: dodgerblue;
   padding: 15px 25px;
   color:white;
@@ -78,10 +80,12 @@ body {
   text-align: center;
   transition: all .2s;
 }
-.desc a:hover{
+
+.desc .read-more:hover{
   background-color: SteelBlue;
 }
-.desc a:hover svg{
+
+.desc .read-more:hover svg{
   animation : iconjln 1s;
 }
 

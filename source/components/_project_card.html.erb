@@ -1,24 +1,28 @@
 <div class="card">
   <div class="img-cover"><%= image_tag "#{project}/1.webp", alt: "screenshot" %>
-    <div class="icon"><svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 9H22M12 1.5L20.9333 8.2C21.4667 8.6 21.4667 9.4 20.9333 9.8L12 16.5" stroke="black" stroke-width="3" />
-      </svg>
-    </div>
   </div>
   <div class="desc">
     <h3>
       <%= project_name %>
     </h3>
-    <div class="d-flex">
+    <div class="d-flex justify-content-around mb-3">
       <% link_to app do%>
-      <i class="fas fa-desktop"></i>
+      <div class="my-2">
+        <i class="fas fa-desktop"></i> App
+      </div>
       <% end %>
       <% link_to github do%>
-      <i class="fab fa-github"></i>
+      <div class="my-2">
+        <i class="fab fa-github"></i> Code
+      </div>
       <% end %>
     </div>
-    <a href="">Read more <svg width="19" height="14" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <% link_to "projects/#{project}" do %>
+    <div class="read-more">
+        Read more <svg width="19" height="14" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 9H22M12 1.5L20.9333 8.2C21.4667 8.6 21.4667 9.4 20.9333 9.8L12 16.5" stroke="white" stroke-width="3" />
-      </svg></a>
+      </svg>
+    </div>
+    <% end %>
   </div>
 </div>
