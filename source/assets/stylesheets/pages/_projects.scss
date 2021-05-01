@@ -29,7 +29,7 @@ body {
   transform: translate(-5px, -5px);
 }
 
-.card:hover .icon svg{
+.card:hover .icon .fas{
   animation : iconjln 1s;
 }
 
@@ -85,7 +85,7 @@ body {
   background-color: SteelBlue;
 }
 
-.desc .read-more:hover svg{
+.desc .read-more:hover .fas{
   animation : iconjln 1s;
 }
 
@@ -114,21 +114,40 @@ body {
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .projects-cards {
-    grid-template-columns: 1fr;
+    .img-cover {
+      display: none;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+    .desc {
+      font-size: 10px;
+    }
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .projects-cards {
-    grid-template-columns: 1fr;
+    .img-cover {
+      display: none;
+    }
+    .desc {
+
+    }
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .projects-cards {
-    grid-template-columns: 1fr 1fr;
+    .img-cover {
+      display: none;
+    }
+    .desc {
+
+    }
   }
 }
 
@@ -136,6 +155,9 @@ body {
 @media (min-width: 992px) {
   .projects-cards {
     grid-template-columns: 1fr 1fr 1fr;
+    .img-cover {
+      display: initial;
+    }
   }
 }
 
