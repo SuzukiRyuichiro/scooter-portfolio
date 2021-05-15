@@ -33,17 +33,6 @@ configure :development do
   set      :debug_assets, true
 end
 
-configure :build do
-  ignore   File.join(config[:js_dir], '*') # handled by webpack
-  set      :relative_links, true
-  activate :asset_hash
-  activate :gzip
-  activate :minify_css
-  activate :relative_assets
-end
-
-activate :directory_indexes
-
 projects = [
   { project: "simple", content: "<b>Simple Portfolio</b> was built as the final project of 9 weeks coding bootcamp. It is a web application that aids individual investors to consolidate portfolios into one application even when users have their assets across multiple platforms. The app was built in a group of three and I was the lead developer. I proposed the project and took a major role in organizing the development. <a href='https://single-portfolio.herokuapp.com/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/simple_portfolio'><i class='fab fa-github'></i></a>"},
   { project: "redux-chat", content: "<b>React Redux Chat</b> is a simple chat application made with React and Redux. Backend of the application is handled with Message API, which is a RESTful API I made with Rails for this application. <a href='https://suzukiryuichiro.github.io/chat/'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/chat'><i class='fab fa-github'></i></a>" },
@@ -56,3 +45,15 @@ projects = [
 projects.each do |hash|
   proxy "/projects/#{hash[:project]}.html", "/projects/template.html", :locals => hash
 end
+
+configure :build do
+  ignore   File.join(config[:js_dir], '*') # handled by webpack
+  set      :relative_links, true
+  activate :asset_hash
+  activate :gzip
+  activate :minify_css
+  activate :relative_assets
+end
+
+activate :directory_indexes
+
