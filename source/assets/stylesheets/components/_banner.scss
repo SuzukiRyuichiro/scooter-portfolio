@@ -1,13 +1,15 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 300px 0;
-  position: relative;
+  padding: 30% 0;
   .banner-avatar {
     position: absolute;
   }
 }
 
+.avatar-banner {
+  margin-top: -125px;
+}
 
 
 .banner h1 {
