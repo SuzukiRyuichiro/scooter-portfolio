@@ -1,11 +1,11 @@
 <div class="scroll-container">
   <!-- first page -->
-  <div class="scroll-page">
+  <div class="">
     <%= partial 'components/banner' %>
     <%= partial 'components/menu_and_name' %>
   </div>
   <!-- Information about me -->
-  <div class="scroll-page container" id="Info">
+  <div class="container" id="Info">
     <h2 class="divider line one-line">About me</h2>
     <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <%= image_tag "profile-picture2.webp", alt: "alttext", class: 'about-me-pic' %>
@@ -13,19 +13,19 @@
     </div>
   </div>
   <!-- Projects cards -->
-  <div class="scroll-page container" id="Projects">
+  <div class="container" id="Projects">
     <h2 class="divider line one-line">Projects</h2>
     <%= partial 'components/projects' %>
   </div>
   <!-- My writings -->
-  <!--   <div class="scroll-page container" id="Posts">
+  <!--   <div class="container" id="Posts">
     <h2 class="project-header"><i class="fas fa-rss"></i> My Writings</h2>
     <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <a href="https://qiita.com/SuzukiRyuichiro" data-qiita-widget data-hide-footer data-width="50vw" data-username="SuzukiRyuichiro">Posts</a>
       <script src="https://qiita-widget.suin.io/widget.js" defer></script>
     </div>
   </div> -->
-  <!--   <div class="scroll-page" id="Hobbies">
+  <!--   <div class=" id="Hobbies">
     <div class="container d-flex align-items-center justify-content-around h-100">
       <div>
         <#%= partial 'components/hobby_card', locals: {anchor: "left", photo: "hobby1.jpg", title: "Photography", content: "I like taking photos", link: "<a href='https://www.google.com'><i class=\"fab fa-instagram\"></i></a>", aos: 'fade-right'} %>
@@ -35,7 +35,7 @@
     </div>
   </div>
   -->
-  <div class="scroll-page container" id="Contact">
+  <div class="container" id="Contact">
    <h2 class="divider line one-line">Socials</h2>
     <%= partial 'components/contact'  %>
   </div>
