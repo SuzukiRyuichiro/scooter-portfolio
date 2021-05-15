@@ -5,7 +5,8 @@
     <%= partial 'components/menu_and_name' %>
   </div>
   <!-- Information about me -->
-  <div class="scroll-page" id="Info">
+  <div class="scroll-page container" id="Info">
+    <h2 class="divider line one-line">About me</h2>
     <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <%= image_tag "profile-picture2.webp", alt: "alttext", class: 'about-me-pic' %>
       <%= partial 'components/about_me' %>
@@ -13,10 +14,11 @@
   </div>
   <!-- Projects cards -->
   <div class="scroll-page container" id="Projects">
+    <h2 class="divider line one-line">Projects</h2>
     <%= partial 'components/projects' %>
   </div>
   <!-- My writings -->
-<!--   <div class="scroll-page container" id="Posts">
+  <!--   <div class="scroll-page container" id="Posts">
     <h2 class="project-header"><i class="fas fa-rss"></i> My Writings</h2>
     <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <a href="https://qiita.com/SuzukiRyuichiro" data-qiita-widget data-hide-footer data-width="50vw" data-username="SuzukiRyuichiro">Posts</a>
@@ -32,7 +34,7 @@
       </div>
     </div>
   </div>
- -->
+  -->
   <div class="scroll-page" id="Contact">
     <%= partial 'components/contact'  %>
   </div>
