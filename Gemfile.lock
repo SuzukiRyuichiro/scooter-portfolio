@@ -63,7 +63,7 @@ GEM
     diff-lcs (1.4.4)
     dotenv (2.7.6)
     erubis (2.7.0)
-    execjs (2.8.1)
+    execjs (2.2.2)
     fast_blank (1.0.0)
     fastimage (2.2.3)
     ffi (1.15.0)
@@ -102,7 +102,7 @@ GEM
       contracts (~> 0.13.0)
       dotenv
       erubis
-      execjs (~> 2.7.0)
+      execjs (~> 2.0)
       fast_blank
       fastimage (~> 2.0)
       hamster (~> 3.0)
@@ -210,6 +210,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
+  execjs (~> 2.2.2)
   font-awesome-sass (~> 5.13.0)
   middleman
   middleman-autoprefixer

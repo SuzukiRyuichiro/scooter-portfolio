@@ -1,2 +1,2 @@
 import 'bootstrap';
-import { Controller } from './src/controllers/hello_controller';
+// import { Controller } from './src/controllers/hello_controller';
