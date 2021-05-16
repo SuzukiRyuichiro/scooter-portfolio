@@ -1,10 +1,10 @@
-<div class="projects-cards">
-  <%= partial "components/project_card", locals: {delay: '0', project: "simple", project_name:"Simple Portfolio", app: "https://single-portfolio.herokuapp.com", github: "https://github.com/SuzukiRyuichiro/simple_portfolio", stack: ['js', 'rails', 'pg', 'scss', 'html', 'ruby'] }%>
-  <%= partial "components/project_card", locals: {delay: '100', project: "redux-chat", project_name:"React Redux Chat", app: "https://suzukiryuichiro.github.io/chat/", github:  "https://github.com/SuzukiRyuichiro/chat", stack: ['redux','react','js', 'scss'] }%>
-  <%= partial "components/project_card", locals: {delay: '200', project: "booze", project_name:"Powered by Booze", app: "https://powered-by-booze.herokuapp.com/", github:  "https://github.com/SuzukiRyuichiro/powered-by-booze", stack: ['rails', 'pg', 'scss', 'html', 'ruby'] }%>
-  <%= partial "components/project_card", locals: {delay: '0', project: "napbuddies", project_name:"Napbuddies", app: "https://napbuddies.herokuapp.com/", github:  "https://github.com/SuzukiRyuichiro/napbuddies", stack: ['rails', 'js', 'pg', 'scss', 'html', 'ruby'] }%>
-  <%= partial "components/project_card", locals: {delay: '100', project: "formula", project_name:"Formula Gif", app: "https://suzukiryuichiro.github.io/formula-gif", github:  "https://github.com/SuzukiRyuichiro/formula-giphy", stack: ['react', 'js', 'scss'] }%>
-  <%= partial "components/project_card", locals: {delay: '200', project: "message", project_name:"Message API", app: "https://scooter-messages.herokuapp.com/api/v1/channels", github:  "https://github.com/SuzukiRyuichiro/message_api", stack: ['rails','pg', 'ruby'] }%>
+<div class="projects-cards"  data-aos="zoom-in">
+  <%= partial "components/project_card", locals: { project: "simple", project_name:"Simple Portfolio", app: "https://single-portfolio.herokuapp.com", github: "https://github.com/SuzukiRyuichiro/simple_portfolio", stack: ['js', 'rails', 'pg', 'scss', 'html', 'ruby'] }%>
+  <%= partial "components/project_card", locals: { project: "redux-chat", project_name:"React Redux Chat", app: "https://suzukiryuichiro.github.io/chat/", github:  "https://github.com/SuzukiRyuichiro/chat", stack: ['redux','react','js', 'scss'] }%>
+  <%= partial "components/project_card", locals: { project: "booze", project_name:"Powered by Booze", app: "https://powered-by-booze.herokuapp.com/", github:  "https://github.com/SuzukiRyuichiro/powered-by-booze", stack: ['rails', 'pg', 'scss', 'html', 'ruby'] }%>
+  <%= partial "components/project_card", locals: { project: "napbuddies", project_name:"Napbuddies", app: "https://napbuddies.herokuapp.com/", github:  "https://github.com/SuzukiRyuichiro/napbuddies", stack: ['rails', 'js', 'pg', 'scss', 'html', 'ruby'] }%>
+  <%= partial "components/project_card", locals: { project: "formula", project_name:"Formula Gif", app: "https://suzukiryuichiro.github.io/formula-gif", github:  "https://github.com/SuzukiRyuichiro/formula-giphy", stack: ['react', 'js', 'scss'] }%>
+  <%= partial "components/project_card", locals: { project: "message", project_name:"Message API", app: "https://scooter-messages.herokuapp.com/api/v1/channels", github:  "https://github.com/SuzukiRyuichiro/message_api", stack: ['rails','pg', 'ruby'] }%>
 </div>
 <!--
 <ul class="nav tabs-underlined" id="myTab" role="tablist">
