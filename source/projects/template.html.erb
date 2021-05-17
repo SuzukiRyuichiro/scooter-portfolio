@@ -5,11 +5,11 @@
 <div class="d-grid" id="Projects">
   <div id="carouselControls" class="carousel slide carousel-size-position" data-ride="carousel">
     <div class="carousel-inner">
-      <%# data.images.images.each do |f| %>
-      <div class="carousel-item carousel-bg <%#= " active" if f==1 %>">
-        <%#= image_tag "#{project}/#{f}.webp", alt: "screenshot", class: "d-block w-100" %>
+      <% data.images.images.each do |f| %>
+      <div class="carousel-item carousel-bg <%= 'active' if f == 1 %>">
+        <%= image_tag "#{project}/#{f}.webp", alt: "screenshot", class: "d-block w-100" %>
       </div>
-      <%# end %>
+      <% end %>
     </div>
     <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
