@@ -54,6 +54,6 @@ projects = [
 ]
 
 projects.each do |app|
-  proxy "/projects/#{app[:project_name]}.html", "/projects/template.html", :locals => app
+  proxy "/projects/#{app[:project_name]}.html", "/projects/template.html", :locals => { project_name: app[:project_name], content: app[:content] }
 end
 
