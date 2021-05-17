@@ -53,7 +53,7 @@ projects = [
   { project_name: "message", content: "<b>Message API</b> is an API that is built with Ruby on Rails <i class='devicon-rails-plain-wordmark'></i>. Users can GET messages from a channel, and also POST to the channel using the same endpoint. Please refer to the README in the GitHub for detailed usage. <a href='https://scooter-messages.herokuapp.com/api/v1/channels'><i class='fas fa-desktop'></i></a> <a href='https://github.com/SuzukiRyuichiro/message_api'><i class='fab fa-github'></i></a>" }
 ]
 
-projects.each do |hash|
-  proxy "/projects/#{hash[:project_name]}.html", "/projects/template.html", :locals => hash
+projects.each do |app|
+  proxy "/projects/#{app[:project_name]}.html", "/projects/template.html", :locals => app
 end
 
