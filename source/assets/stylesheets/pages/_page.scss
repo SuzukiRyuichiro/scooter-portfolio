@@ -5,6 +5,8 @@
   #Info {
     .about-me-pic {
       max-height: 50%;
+      background : white;
+      box-shadow:5px 5px 15px rgba(0,0,0, .3);
     }
     .container {
       flex-direction: column;
