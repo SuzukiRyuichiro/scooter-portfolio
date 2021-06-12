@@ -1,6 +1,8 @@
-<div class="scroll-container">
+<div class="scroll-container" data-controller="translate">
   <!-- first page -->
-  <div class="">
+  <div class="first-page">
+    <%= partial 'components/switch' %>
+    <button data-action="click->translate#test">test</button>
     <%= partial 'components/banner' %>
     <%= partial 'components/menu_and_name' %>
   </div>
