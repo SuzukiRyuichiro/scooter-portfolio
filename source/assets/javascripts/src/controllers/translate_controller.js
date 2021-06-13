@@ -41,7 +41,7 @@ export default class extends Controller {
     this.ContactTarget.innerText = "Contact";
     this.SocialsTarget.innerText = "Socials";
     this.heyTarget.innerText = "hey👋 I'm Scooter 🛵";
-    this.aboutmeTarget.innerText =　"I am a full-stack web developer and very passionate about technology and computer science. I participated in 9 week full-time coding bootcamp at <a href='https://www.lewagon.com/'>Le Wagon Tokyo</a> and graduated in March 2021. Since then, I am learning new concepts everyday to become a better developer. I am a Japanese / English bilingual 🇯🇵🇬🇧";
+    this.aboutmeTarget.innerText =　"I am a full-stack web developer and very passionate about technology and computer science. I participated in 9 week full-time coding bootcamp at Le Wagon Tokyo and graduated in March 2021. Since then, I am learning new concepts everyday to become a better developer. I am a Japanese / English bilingual 🇯🇵🇬🇧";
   }
 
   toggle() {
