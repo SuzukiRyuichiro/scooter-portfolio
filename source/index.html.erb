@@ -7,7 +7,7 @@
   </div>
   <!-- Information about me -->
   <div class="container" id="Info">
-    <h2 class="divider line one-line">About me</h2>
+    <h2 class="divider line one-line" data-translate-target="Info">About me</h2>
     <div class="container d-flex align-items-center justify-content-around h-100" data-aos='zoom-in'>
       <%= image_tag "profile-picture2.webp", alt: "alttext", class: 'about-me-pic' %>
       <%= partial 'components/about_me' %>
@@ -15,7 +15,7 @@
   </div>
   <!-- Projects cards -->
   <div class="container" id="Projects">
-    <h2 class="divider line one-line">Projects</h2>
+    <h2 class="divider line one-line" data-translate-target="Projects">Projects</h2>
     <%= partial 'components/projects' %>
   </div>
   <!-- My writings -->
@@ -37,7 +37,7 @@
   </div>
   -->
   <div class="container" id="Contact">
-   <h2 class="divider line one-line">Socials</h2>
+   <h2 class="divider line one-line" data-translate-target="Contact">Socials</h2>
     <%= partial 'components/contact'  %>
   </div>
   <%= partial 'components/footer' %>
