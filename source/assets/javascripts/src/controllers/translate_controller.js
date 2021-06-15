@@ -33,7 +33,7 @@ export default class extends Controller {
     this.ContactTarget.classList.add("japanese");
     this.SocialsTarget.innerText = "ソーシャルメディア";
     this.heyTarget.innerText = "こんにちは！";
-    this.aboutmeTarget.innerText =　"フルスタックエンジニアの鈴木龍一郎です。文系の学部に通っていますが、基本的にずっとプログラミングの勉強をしています。大学3年のときに、Le Wagon Tokyoで9週間のフルタイム・コーディング・ブートキャンプに参加し、卒業後はそこでTAもやっています。私は日本語/英語のバイリンガルです🇯🇵🇬🇧";
+    this.aboutmeTarget.innerText =　"フルスタックエンジニアの鈴木龍一郎です。文系の学部に通っていますが、基本的にずっとプログラミングの勉強をしています。大学3年のときに、Le Wagon Tokyoで9週間のフルタイム・コーディング・ブートキャンプに参加し、卒業後はそこでTAもやっています。日本語と英語のバイリンガルです🇯🇵🇬🇧";
     this.InfoTarget.classList.add("japanese");
   }
 
